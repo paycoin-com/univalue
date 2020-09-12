@@ -14,6 +14,7 @@ add_library(univalue
         )
 
 target_include_directories(univalue PRIVATE lib)
+target_include_directories(univalue PUBLIC include)
 
 if(UNIVALUE_BUILD_TESTS)
     enable_testing()
