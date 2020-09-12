@@ -11,11 +11,16 @@ add_library(univalue
         lib/univalue_get.cpp
         lib/univalue_read.cpp
         lib/univalue_write.cpp
-        include/univalue.h
         )
 
-target_include_directories(univalue PRIVATE lib)
-target_include_directories(univalue PUBLIC include)
+install(FILES include/qrencode.h DESTINATION include)
+
+target_include_directories(univalue
+        PUBLIC
+            include
+        PRIVATE
+            lib
+    )
 
 if(UNIVALUE_BUILD_TESTS)
     enable_testing()
