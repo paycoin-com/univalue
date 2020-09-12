@@ -11,6 +11,7 @@ add_library(univalue
         lib/univalue_get.cpp
         lib/univalue_read.cpp
         lib/univalue_write.cpp
+        include/univalue.h
         )
 
 target_include_directories(univalue PRIVATE lib)
