@@ -13,7 +13,7 @@ add_library(univalue
         lib/univalue_write.cpp
         )
 
-install(FILES include/qrencode.h DESTINATION include)
+install(FILES include/univalue.h DESTINATION include)
 
 target_include_directories(univalue
         PUBLIC
